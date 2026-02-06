@@ -1,1 +1,1 @@
-Casual coding Exercises
+Coding examples and problems
