@@ -15,16 +15,12 @@ vector<string> split(const string &);
  *  2. INTEGER b
  */
 
-int restaurant(int l, int b) {
-    int area = l*b;
-    int side = __gcd(l,b);
-    //int result = 0;
-        
-    return area / (side*side);
-
-    
+long long restaurant(int l, int b) {
+    long long side = __gcd(l, b);
+    // compute as (l/side)*(b/side) to avoid intermediate overflow
+    long long tiles = (long long)(l / side) * (long long)(b / side);
+    return tiles;
 }
-
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
@@ -44,7 +40,7 @@ int main()
 
         int b = stoi(first_multiple_input[1]);
 
-        int result = restaurant(l, b);
+        long long result = restaurant(l, b);
 
         fout << result << "\n";
     }

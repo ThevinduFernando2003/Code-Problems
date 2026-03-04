@@ -1,4 +1,5 @@
 def merge_and_count(arr, temp, left, mid, right):
+    
     i = left     # Left subarray index
     j = mid + 1  # Right subarray index
     k = left     # Merged array index
