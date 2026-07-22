@@ -1,13 +1,20 @@
 def sumSquare(n):
-    sum = 0
-    for i in range(1, n+1):
-        sum += i**2
-    return sum
+    total = 0
+    for i in range(1, n + 1):
+        total += i**2
+    return total
+
 
 def squareSum(n):
-    sum = 0
-    for i in range(1, n+1):
-        sum += i
-    return sum**2
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total**2
 
-print(squareSum(100) - sumSquare(100))
+
+def difference(n):
+    return squareSum(n) - sumSquare(n)
+
+
+if __name__ == "__main__":
+    print(difference(100))  # 25164150
