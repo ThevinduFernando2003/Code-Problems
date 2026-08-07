@@ -6,59 +6,35 @@ string ltrim(const string &);
 string rtrim(const string &);
 
 /*
- * Complete the 'primeCount' function below.
+ * Complete the 'summingSeries' function below.
  *
  * The function is expected to return an INTEGER.
  * The function accepts LONG_INTEGER n as parameter.
  */
-bool isPrime(long long i) {
-    if (i <= 1) return false;
-    for (long long j = 2; j * j <= i; j++) {
-        if (i % j == 0) {
-            return false;
-        }
-    }
-    return true;
-}
 
-int primeCount(long long n) {
-    if (n < 2) {
-        return 0;
-    }
+const long long MOD = 1000000007;
 
-    int count = 0;
-    long long total = 1;
-
-    for (long long i = 2; ; i++) {
-        if (!isPrime(i)) {
-            continue;
-        }
-        if (total > n / i) {
-            break;
-        }
-        total *= i;
-        count++;
-    }
-
-    return count;
+int summingSeries(long long n) {
+    long long result = (n % MOD) * (n % MOD) % MOD;
+    return static_cast<int>(result);
 }
 
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
 
-    string q_temp;
-    getline(cin, q_temp);
+    string t_temp;
+    getline(cin, t_temp);
 
-    int q = stoi(ltrim(rtrim(q_temp)));
+    int t = stoi(ltrim(rtrim(t_temp)));
 
-    for (int q_itr = 0; q_itr < q; q_itr++) {
+    for (int t_itr = 0; t_itr < t; t_itr++) {
         string n_temp;
         getline(cin, n_temp);
 
         long long n = stoll(ltrim(rtrim(n_temp)));
 
-        int result = primeCount(n);
+        int result = summingSeries(n);
 
         fout << result << "\n";
     }
