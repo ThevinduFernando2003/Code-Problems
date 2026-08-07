@@ -17,19 +17,21 @@ vector<string> split(const string &);
  *  4. INTEGER_ARRAY queries
  */
 
-vector<double> movingTiles(int l, int s1, int s2, vector<int> queries) {
+vector<double> movingTiles(long long l, long long s1, long long s2, vector<long long> queries) {
     vector<double> answers;
-    double speedDiff = abs(s1 - s2);
+    answers.reserve(queries.size());
 
-    for (int query : queries) {
-        if (speedDiff == 0) {
+    const double speedDiff = static_cast<double>(llabs(s1 - s2));
+    const double rootTwo = sqrt(2.0);
+
+    for (long long query : queries) {
+        if (speedDiff == 0.0) {
             answers.push_back(0.0);
             continue;
         }
 
-        double side = l - sqrt(static_cast<double>(query));
-        double time = side * sqrt(2.0) / speedDiff;
-        answers.push_back(time);
+        double side = static_cast<double>(l) - sqrt(static_cast<double>(query));
+        answers.push_back((side * rootTwo) / speedDiff);
     }
 
     return answers;
@@ -44,24 +46,24 @@ int main()
 
     vector<string> first_multiple_input = split(rtrim(first_multiple_input_temp));
 
-    int l = stoi(first_multiple_input[0]);
+    long long l = stoll(first_multiple_input[0]);
 
-    int s1 = stoi(first_multiple_input[1]);
+    long long s1 = stoll(first_multiple_input[1]);
 
-    int s2 = stoi(first_multiple_input[2]);
+    long long s2 = stoll(first_multiple_input[2]);
 
     string queries_count_temp;
     getline(cin, queries_count_temp);
 
     int queries_count = stoi(ltrim(rtrim(queries_count_temp)));
 
-    vector<int> queries(queries_count);
+    vector<long long> queries(queries_count);
 
     for (int i = 0; i < queries_count; i++) {
         string queries_item_temp;
         getline(cin, queries_item_temp);
 
-        int queries_item = stoi(ltrim(rtrim(queries_item_temp)));
+        long long queries_item = stoll(ltrim(rtrim(queries_item_temp)));
 
         queries[i] = queries_item;
     }
