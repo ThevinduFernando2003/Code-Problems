@@ -27,6 +27,7 @@ def countResponseTimeRegressions(responseTimes):
 
         if i > 0:
             previous_average = running_sum / i
+
             if current > previous_average:
                 count += 1
 
@@ -46,3 +47,5 @@ if __name__ == '__main__':
     result = countResponseTimeRegressions(responseTimes)
 
     print(result)
+
+
