@@ -1,18 +1,25 @@
 """Project Euler Problem 86: Cuboid Route"""
 
+from math import isqrt
 
-def solve(limit: int = 1_000_000) -> int:
-    m = 1
-    while True:
-        count = 0
-        for width in range(1, m + 1):
-            for height in range(width, m + 1):
-                shortest = (m * m + height * height) ** 0.5
-                if abs(shortest - round(shortest)) < 1e-9:
-                    count += 1
-        if count > limit:
-            return m
-        m += 1
+
+def solve(target: int = 1_000_000) -> int:
+    count = 0
+    size = 0
+
+    while count <= target:
+        size += 1
+        for width_plus_height in range(2, 2 * size + 1):
+            squared = size * size + width_plus_height * width_plus_height
+            root = isqrt(squared)
+            if root * root != squared:
+                continue
+            low = max(1, width_plus_height - size)
+            high = min(width_plus_height // 2, size)
+            if high >= low:
+                count += high - low + 1
+
+    return size
 
 
 if __name__ == "__main__":

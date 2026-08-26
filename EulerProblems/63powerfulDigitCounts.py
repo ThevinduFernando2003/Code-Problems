@@ -3,11 +3,10 @@
 
 def solve() -> int:
     count = 0
-    for power in range(2, 6):
-        n = 1
-        while len(str(n**power)) == power:
-            count += 1
-            n += 1
+    for power in range(1, 22):
+        for base in range(1, 10):
+            if len(str(base**power)) == power:
+                count += 1
     return count
 
 

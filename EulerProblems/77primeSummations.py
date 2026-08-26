@@ -1,22 +1,29 @@
 """Project Euler Problem 77: Prime Summations"""
 
 
-def solve(target: int = 5000) -> int:
-    ways = [0] * (target + 1)
-    ways[0] = 1
-    primes = []
+def sieve(limit: int) -> list[int]:
+    is_prime = [True] * (limit + 1)
+    is_prime[0] = is_prime[1] = False
+    for i in range(2, int(limit**0.5) + 1):
+        if is_prime[i]:
+            is_prime[i * i : limit + 1 : i] = [False] * len(is_prime[i * i : limit + 1 : i])
+    return [i for i, prime in enumerate(is_prime) if prime]
 
-    for candidate in range(2, target + 1):
-        is_prime = all(candidate % p for p in primes)
-        if is_prime:
-            primes.append(candidate)
-            for amount in range(candidate, target + 1):
-                ways[amount] += ways[amount - candidate]
 
-        if ways[target] > 5000:
-            return candidate
+def solve(target_ways: int = 5000) -> int:
+    limit = 100
+    while True:
+        primes = sieve(limit)
+        ways = [0] * (limit + 1)
+        ways[0] = 1
+        for prime in primes:
+            for amount in range(prime, limit + 1):
+                ways[amount] += ways[amount - prime]
 
-    return target
+        for n in range(2, limit + 1):
+            if ways[n] > target_ways:
+                return n
+        limit *= 2
 
 
 if __name__ == "__main__":

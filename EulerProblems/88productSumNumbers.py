@@ -2,20 +2,22 @@
 
 
 def solve(limit: int = 12_000) -> int:
-    numbers = {2: 1}
+    max_n = 2 * limit
+    minimal = [10**18] * (limit + 1)
 
-    def search(current, remaining, product, total, start):
-        if remaining == 0:
-            if product == total:
-                numbers[total] = min(numbers.get(total, total), current)
-            return
-        for value in range(start, remaining + 1):
-            search(current + 1, remaining - value, product * value, total + value, value)
+    def search(product: int, total: int, factors: int, start: int) -> None:
+        ones_needed = product - total
+        k = factors + ones_needed
+        if 2 <= k <= limit:
+            minimal[k] = min(minimal[k], product)
 
-    for total in range(2, limit + 1):
-        search(0, total, 1, total, 2)
+        i = start
+        while product * i <= max_n:
+            search(product * i, total + i, factors + 1, i)
+            i += 1
 
-    return sum(k for k, v in numbers.items() if k <= limit and v == k)
+    search(1, 0, 0, 2)
+    return sum(set(minimal[2:]))
 
 
 if __name__ == "__main__":

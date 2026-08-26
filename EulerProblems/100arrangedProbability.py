@@ -1,18 +1,12 @@
 """Project Euler Problem 100: Arranged Probability"""
 
-from math import comb
 
-
-def solve() -> int:
-    for total in range(100, 10_000):
-        blue = 0
-        for b in range(1, total):
-            if comb(b, 2) / comb(total, 2) == 0.5:
-                blue = b
-                break
-        if blue and comb(blue - 1, 2) / comb(total - 1, 2) == 1 / 3:
-            return total
-    return 0
+def solve(limit: int = 10**12) -> int:
+    # Solutions to 2b(b-1) = n(n-1) come from the Pell recurrence.
+    blue, total = 15, 21
+    while total <= limit:
+        blue, total = 3 * blue + 2 * total - 2, 4 * blue + 3 * total - 3
+    return blue
 
 
 if __name__ == "__main__":

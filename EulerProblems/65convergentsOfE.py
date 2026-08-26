@@ -3,15 +3,23 @@
 from fractions import Fraction
 
 
-def solve(terms: int = 100) -> int:
-    convergent = Fraction(2, 1)
-    numerator, denominator = 1, 2
+def e_terms(count: int) -> list[int]:
+    terms = []
+    for k in range(count):
+        if k == 0:
+            terms.append(2)
+        elif k % 3 == 2:
+            terms.append(2 * (k // 3 + 1))
+        else:
+            terms.append(1)
+    return terms
 
-    for k in range(2, terms + 1):
-        multiplier = 1 if k % 3 else 2
-        convergent = convergent + Fraction(1, denominator)
-        numerator, denominator = denominator, denominator * multiplier + numerator
 
+def solve(n: int = 100) -> int:
+    terms = e_terms(n)
+    convergent = Fraction(terms[-1], 1)
+    for term in reversed(terms[:-1]):
+        convergent = term + 1 / convergent
     return sum(int(digit) for digit in str(convergent.numerator))
 
 

@@ -1,19 +1,29 @@
 """Project Euler Problem 78: Coin Partitions"""
 
-MOD = 1_000_000
 
+def solve(modulus: int = 1_000_000) -> int:
+    partitions = [1]
+    n = 1
 
-def solve() -> int:
-    ways = [0] * 100_001
-    ways[0] = 1
+    while True:
+        total = 0
+        k = 1
+        while True:
+            pentagonal1 = k * (3 * k - 1) // 2
+            pentagonal2 = k * (3 * k + 1) // 2
+            if pentagonal1 > n:
+                break
+            sign = 1 if k % 2 == 1 else -1
+            total += sign * partitions[n - pentagonal1]
+            if pentagonal2 <= n:
+                total += sign * partitions[n - pentagonal2]
+            k += 1
 
-    for coin in range(1, 100_001):
-        for amount in range(coin, 100_001):
-            ways[amount] = (ways[amount] + ways[amount - coin]) % MOD
-            if ways[amount] % 1_000_000 == 0:
-                return coin
-
-    return 0
+        value = total % modulus
+        partitions.append(value)
+        if value == 0:
+            return n
+        n += 1
 
 
 if __name__ == "__main__":

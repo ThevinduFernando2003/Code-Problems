@@ -18,7 +18,6 @@ Examples:
 | Range | Status |
 |-------|--------|
 | Problems 1–100 | Complete |
-| Problems 51–100 | Complete |
 
 ## Run a Solution
 
@@ -34,9 +33,18 @@ Some problems need optional input files in this folder:
 
 | File | Used by | Source |
 |------|---------|--------|
-| `euler13.txt` | Problem 13 | [euler13.txt](https://projecteuler.net/project/euler13.txt) |
-| `names.txt` | Problem 22 | [names.txt](https://projecteuler.net/project/names.txt) |
-| `words.txt` | Problem 42 | [words.txt](https://projecteuler.net/project/words.txt) |
+| `euler13.txt` | Problem 13 | Project Euler large-sum input |
+| `names.txt` | Problem 22 | Project Euler names |
+| `words.txt` | Problem 42 | Project Euler words |
+| `poker.txt` | Problem 54 | Project Euler poker hands |
+| `cipher1.txt` | Problem 59 | Project Euler XOR cipher |
+| `triangle67.txt` | Problem 67 | Project Euler triangle |
+| `keylog.txt` | Problem 79 | Project Euler passcode |
+| `matrix81.txt` / `matrix82.txt` / `matrix83.txt` | Problems 81–83 | Project Euler path-sum matrices |
+| `roman.txt` | Problem 89 | Project Euler roman numerals |
+| `sudoku.txt` | Problem 96 | Project Euler Su Doku |
+| `words98.txt` | Problem 98 | Project Euler anagram words |
+| `base_exp.txt` | Problem 99 | Project Euler exponentials |
 
 If a data file is missing, the solution may use embedded fallback input or raise a clear error.
 

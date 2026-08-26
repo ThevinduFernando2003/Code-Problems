@@ -1,16 +1,18 @@
 """Project Euler Problem 62: Cubic Permutations"""
 
+from collections import defaultdict
+
 
 def solve(group_size: int = 5) -> int:
-    cubes = {}
+    groups: dict[str, list[int]] = defaultdict(list)
     n = 1
 
     while True:
         cube = n**3
         key = "".join(sorted(str(cube)))
-        cubes.setdefault(key, []).append(n)
-        if len(cubes[key]) == group_size:
-            return min(cubes[key])
+        groups[key].append(cube)
+        if len(groups[key]) == group_size:
+            return min(groups[key])
         n += 1
 
 

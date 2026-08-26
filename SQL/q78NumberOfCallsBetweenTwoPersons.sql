@@ -1,4 +1,10 @@
--- Code360 Top 100 SQL Problem 78: numberOfCallsBetweenTwoPersons
+-- Code360 Top 100 SQL Problem 78: Number of Calls Between Two Persons
 -- Source list: https://www.naukri.com/code360/problem-lists/top-100-sql-problems
 
-SELECT from_id, to_id, COUNT(*) AS call_count, DATEDIFF(MAX(call_time), MIN(call_time)) AS duration_days FROM Calls GROUP BY LEAST(from_id, to_id), GREATEST(from_id, to_id);
+SELECT
+    LEAST(from_id, to_id) AS person1,
+    GREATEST(from_id, to_id) AS person2,
+    COUNT(*) AS call_count,
+    SUM(duration) AS total_duration
+FROM Calls
+GROUP BY person1, person2;

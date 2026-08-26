@@ -11,7 +11,7 @@ q{number}{ProblemName}.sql
 Examples:
 - `q01RecyclableAndLowFatProducts.sql`
 - `q10RankScores.sql`
-- `q100SqlPracticeProblem100.sql`
+- `q100SqlPracticeProblem100.sql` (second highest distinct salary)
 
 ## Run
 
