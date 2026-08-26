@@ -9,10 +9,11 @@ A personal collection of coding practice solutions, competitive programming prob
 | [`Projects/`](Projects/) | Java Swing desktop games (Minesweeper, Snake) |
 | [`CSES_Problems/`](CSES_Problems/) | C++ solutions for [CSES Problem Set](https://cses.fi/problemset/) (86 solved) |
 | [`Leetcode/`](Leetcode/) | LeetCode problem solutions |
-| [`EulerProblems/`](EulerProblems/) | [Project Euler](https://projecteuler.info/) solutions 1–50 (Python) |
+| [`EulerProblems/`](EulerProblems/) | [Project Euler](https://projecteuler.info/) solutions 1–100 (Python) |
 | [`HackerRank/`](HackerRank/) | HackerRank solutions (Algorithms, DS, Mathematics) |
 | [`CodeRally/`](CodeRally/) | CodeRally weekly test and contest solutions |
 | [`SEPrepKit/`](SEPrepKit/) | Software engineering interview prep problems |
+| [`SQL/`](SQL/) | [Code360 Top 100 SQL](https://www.naukri.com/code360/problem-lists/top-100-sql-problems) (q01–q100) |
 | [`WeeklyQuiz/`](WeeklyQuiz/) | Weekly quiz and challenge solutions |
 | [`DSA/`](DSA/) | Data structures and algorithms practice |
 
@@ -60,9 +61,15 @@ Arcade-style snake game with wall wrapping, scoring, timed bonus food, pause/res
 
 ## Project Euler Progress
 
-Solutions 1–50 live in [`EulerProblems/`](EulerProblems/) using `{number}{problemName}.py` naming. See [`EulerProblems/README.md`](EulerProblems/README.md) for the full index.
+Solutions 1–100 live in [`EulerProblems/`](EulerProblems/) using `{number}{problemName}.py` naming. See [`EulerProblems/README.md`](EulerProblems/README.md) for the full index.
 
-Reference: [Project Euler](https://projecteuler.info/)
+Reference: [Project Euler](https://projecteuler.info/) · [Problems 51–100](https://projecteuler.info/problems;page=2)
+
+## SQL Progress
+
+100 solutions in [`SQL/`](SQL/) as `q{number}{ProblemName}.sql`. See [`SQL/README.md`](SQL/README.md).
+
+Reference: [Code360 Top 100 SQL](https://www.naukri.com/code360/problem-lists/top-100-sql-problems)
 
 ## CSES Progress
 

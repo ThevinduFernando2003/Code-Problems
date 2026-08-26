@@ -17,7 +17,8 @@ Examples:
 
 | Range | Status |
 |-------|--------|
-| Problems 1–50 | Complete |
+| Problems 1–100 | Complete |
+| Problems 51–100 | Complete |
 
 ## Run a Solution
 
