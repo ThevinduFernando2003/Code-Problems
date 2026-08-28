@@ -1,6 +1,20 @@
+# Projects
+
+This folder contains small desktop games: Java Swing titles in this directory, and original Pygame games in [`games/`](games/).
+
+## Pygame Games
+
+See [`games/README.md`](games/README.md). Install Pygame, then run any script:
+
+```powershell
+cd games
+python -m pip install -r requirements.txt
+python pong.py
+```
+
 # Java Swing Projects
 
-This folder contains small desktop games built with Java Swing.
+This folder also contains small desktop games built with Java Swing.
 
 ## Requirements
 

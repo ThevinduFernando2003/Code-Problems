@@ -6,7 +6,7 @@ A personal collection of coding practice solutions, competitive programming prob
 
 | Folder | Description |
 |--------|-------------|
-| [`Projects/`](Projects/) | Java Swing desktop games (Minesweeper, Snake) |
+| [`Projects/`](Projects/) | Java Swing games plus original [Pygame games](Projects/games/) |
 | [`CSES_Problems/`](CSES_Problems/) | C++ solutions for [CSES Problem Set](https://cses.fi/problemset/) (86 solved) |
 | [`Leetcode/`](Leetcode/) | LeetCode problem solutions |
 | [`EulerProblems/`](EulerProblems/) | [Project Euler](https://projecteuler.info/) solutions 1–100 (Python) |
@@ -18,6 +18,10 @@ A personal collection of coding practice solutions, competitive programming prob
 | [`DSA/`](DSA/) | Data structures and algorithms practice |
 
 ## Quick Start
+
+### Pygame Games
+
+See [`Projects/games/README.md`](Projects/games/README.md). Install with `pip install -r Projects/games/requirements.txt`, then run any script such as `python pong.py`.
 
 ### Java Projects (Minesweeper & Snake)
 
@@ -58,6 +62,10 @@ Classic minesweeper with difficulty levels, timer, mine counter, first-click saf
 ### Snake (`Projects/`)
 
 Arcade-style snake game with wall wrapping, scoring, timed bonus food, pause/restart controls, and custom UI.
+
+### Pygame collection (`Projects/games/`)
+
+Original Pygame versions of classic arcade, board, card, and action games (Pong, Snake, Tetris, Pac-Man, Chess, and more). Each game is a single Python file.
 
 ## Project Euler Progress
 
