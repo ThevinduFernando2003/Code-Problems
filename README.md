@@ -8,7 +8,8 @@ A personal collection of coding practice solutions, competitive programming prob
 |--------|-------------|
 | [`Projects/`](Projects/) | Java Swing games plus original [Pygame games](Projects/games/) |
 | [`CSES_Problems/`](CSES_Problems/) | C++ solutions for [CSES Problem Set](https://cses.fi/problemset/) (86 solved) |
-| [`Leetcode/`](Leetcode/) | LeetCode problem solutions |
+| [`Leetcode/`](Leetcode/) | [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) solutions in C++ |
+| [`CoderBytes/`](CoderBytes/) | [Coderbyte playlist](https://www.youtube.com/playlist?list=PL88xup0DHWoYPIu3kIM8NWseGr0o9r-OP) challenges in C++ |
 | [`EulerProblems/`](EulerProblems/) | [Project Euler](https://projecteuler.info/) solutions 1–100 (Python) |
 | [`HackerRank/`](HackerRank/) | HackerRank solutions (Algorithms, DS, Mathematics) |
 | [`CodeRally/`](CodeRally/) | CodeRally weekly test and contest solutions |
@@ -66,6 +67,14 @@ Arcade-style snake game with wall wrapping, scoring, timed bonus food, pause/res
 ### Pygame collection (`Projects/games/`)
 
 Original Pygame versions of classic arcade, board, card, and action games (Pong, Snake, Tetris, Pac-Man, Chess, and more). Each game is a single Python file.
+
+## Coderbyte
+
+All 37 challenges from the [AppDev4Tech Coderbyte playlist](https://www.youtube.com/playlist?list=PL88xup0DHWoYPIu3kIM8NWseGr0o9r-OP) are in [`CoderBytes/`](CoderBytes/) as C++ files with pseudocode. See [`CoderBytes/README.md`](CoderBytes/README.md).
+
+## LeetCode 75
+
+All 75 problems from the official [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) study plan are in [`Leetcode/`](Leetcode/) as C++ `Solution` classes. See [`Leetcode/README.md`](Leetcode/README.md) for the full index.
 
 ## Project Euler Progress
 
