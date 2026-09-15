@@ -1,3 +1,15 @@
+/*
+CSES - Collecting Numbers II
+
+After each swap of two positions, reprint the number of rounds.
+
+Pseudocode
+----------
+keep pos[] of each value
+a swap changes at most the pairs (v,v+1) for the two values
+recompute those pairs before and after
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

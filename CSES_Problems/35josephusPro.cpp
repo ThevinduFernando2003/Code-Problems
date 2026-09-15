@@ -1,3 +1,14 @@
+/*
+CSES - Josephus Problem I
+
+Every other remaining child is removed, starting from 1.
+
+Pseudocode
+----------
+queue/list of children
+while more than one: pop, skip (push back), pop and print
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

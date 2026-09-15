@@ -1,3 +1,15 @@
+/*
+CSES - Towers
+
+Greedy: put cube on the leftmost tower that is strictly taller.
+Number of towers needed.
+
+Pseudocode
+----------
+multiset of top cubes
+upper_bound(cube); if none, new tower, else replace that top
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

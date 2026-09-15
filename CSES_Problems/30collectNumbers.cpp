@@ -1,3 +1,16 @@
+/*
+CSES - Collecting Numbers
+
+Count rounds to collect 1..n in order.
+
+Pseudocode
+----------
+record position of each value
+rounds := 1
+for x from 2 to n:
+    if pos[x] < pos[x-1]: rounds++
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

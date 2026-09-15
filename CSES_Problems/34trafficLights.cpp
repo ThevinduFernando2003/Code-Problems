@@ -1,3 +1,15 @@
+/*
+CSES - Traffic Lights
+
+After each new light, the longest unlit passage.
+
+Pseudocode
+----------
+set of light positions {0,x}
+multiset of gap lengths
+split the gap that contains the new light
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

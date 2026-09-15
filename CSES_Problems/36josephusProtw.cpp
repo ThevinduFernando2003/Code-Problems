@@ -1,3 +1,14 @@
+/*
+CSES - Josephus Problem II
+
+Every k-th remaining child is removed.
+
+Pseudocode
+----------
+order-statistic tree / indexed set
+jump k steps in the remaining circle
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

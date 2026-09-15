@@ -1,3 +1,13 @@
+/*
+CSES - Playlist
+
+Longest subarray of distinct songs.
+
+Pseudocode
+----------
+two pointers + last-seen index map
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
