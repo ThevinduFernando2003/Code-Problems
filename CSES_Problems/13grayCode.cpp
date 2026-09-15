@@ -1,3 +1,13 @@
+/*
+CSES - Gray Code
+
+n-bit Gray code list.
+
+Pseudocode
+----------
+for i in 0 .. 2^n-1: print i xor (i>>1) as n bits
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,16 @@
+/*
+CSES - Grid Path Description
+
+Count walks of a given 48-move pattern on a 7x7 grid from corner to corner.
+
+Pseudocode
+----------
+backtracking with pruning:
+    hit a wall partition
+    forced-split of unvisited cells
+    follow the given moves, '*' tries all four
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

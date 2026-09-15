@@ -1,3 +1,14 @@
+/*
+CSES - Chessboard and Queens
+
+Ways to place 8 queens on a reserved chessboard.
+
+Pseudocode
+----------
+backtrack row by row
+skip reserved squares, used columns, and both diagonals
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,14 @@
+/*
+CSES - Digit Queries
+
+k-th digit in the infinite string 123456789101112...
+
+Pseudocode
+----------
+count how many digits are contributed by 1-digit, 2-digit, ... numbers
+land in that block, pick the number and the digit inside it
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

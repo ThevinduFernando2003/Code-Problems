@@ -1,3 +1,14 @@
+/*
+CSES - Creating Strings
+
+All unique permutations of a string, sorted.
+
+Pseudocode
+----------
+sort the string
+print it, then repeatedly next_permutation
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,16 @@
+/*
+CSES - Tower of Hanoi
+
+Print the moves to move n disks from peg 1 to peg 3.
+
+Pseudocode
+----------
+hanoi(n, a, b, c):
+    hanoi(n-1, a, c, b)
+    print a c
+    hanoi(n-1, b, a, c)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

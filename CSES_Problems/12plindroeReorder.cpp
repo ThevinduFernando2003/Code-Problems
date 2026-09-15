@@ -1,3 +1,15 @@
+/*
+CSES - Palindrome Reorder
+
+Rearrange letters into a palindrome, or NO SOLUTION.
+
+Pseudocode
+----------
+count frequencies
+at most one odd count
+build left half from counts, put the odd letter in the middle
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

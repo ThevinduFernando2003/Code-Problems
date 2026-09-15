@@ -1,3 +1,15 @@
+/*
+CSES - Apple Division
+
+Split n apple weights into two groups, minimize |sum1-sum2|.
+
+Pseudocode
+----------
+try every subset mask
+diff := abs(total - 2*subsetSum)
+keep the minimum
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

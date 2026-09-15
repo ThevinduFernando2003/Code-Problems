@@ -1,3 +1,13 @@
+/*
+CSES - Coin Piles
+
+From piles (a,b) you may remove (1,2) or (2,1). Can you empty both?
+
+Pseudocode
+----------
+a+b divisible by 3 and min(a,b)*2 >= max(a,b)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
