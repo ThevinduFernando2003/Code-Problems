@@ -1,3 +1,13 @@
+/*
+CSES - Labyrinth
+
+Shortest path in a grid from A to B, print the move string.
+
+Pseudocode
+----------
+BFS, store parent direction, unwind from B
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

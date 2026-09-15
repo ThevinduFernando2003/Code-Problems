@@ -1,3 +1,14 @@
+/*
+CSES - Building Roads
+
+Connect components with the fewest new roads.
+
+Pseudocode
+----------
+DFS/BFS components
+link component reps in a chain
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

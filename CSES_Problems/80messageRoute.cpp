@@ -1,3 +1,13 @@
+/*
+CSES - Message Route
+
+Shortest path from 1 to n in an undirected unweighted graph.
+
+Pseudocode
+----------
+BFS, store parent, unwind
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

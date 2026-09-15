@@ -1,3 +1,13 @@
+/*
+CSES - Round Trip
+
+Find any cycle of length >= 3 in an undirected graph.
+
+Pseudocode
+----------
+DFS, if we see a visited non-parent neighbor, unwind the cycle
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

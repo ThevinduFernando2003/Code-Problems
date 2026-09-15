@@ -1,3 +1,13 @@
+/*
+CSES - Building Teams
+
+2-color a graph, or IMPOSSIBLE.
+
+Pseudocode
+----------
+BFS/DFS bipartite check on every component
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

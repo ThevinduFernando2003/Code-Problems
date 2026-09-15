@@ -1,3 +1,14 @@
+/*
+CSES - Monsters
+
+Escape a grid without meeting a monster (they move as fast as you).
+
+Pseudocode
+----------
+multi-source BFS from all monsters for monster-time
+BFS from A, only step if your time < monster time
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
