@@ -1,3 +1,14 @@
+/*
+CSES - Shortest Routes II
+
+q shortest-path queries in a weighted undirected graph.
+
+Pseudocode
+----------
+Floyd-Warshall
+for each query print dist[a][b] or -1
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
