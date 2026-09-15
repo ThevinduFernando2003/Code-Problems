@@ -1,3 +1,13 @@
+/*
+CSES - Longest Common Subsequence
+
+Print one LCS of two arrays.
+
+Pseudocode
+----------
+2D DP then walk back the table to reconstruct
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

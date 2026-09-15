@@ -1,3 +1,14 @@
+/*
+CSES - Counting Towers
+
+Tilings of a 2 x n wall with the given blocks.
+
+Pseudocode
+----------
+two states: split vs joined at height i
+linear recurrence modulo 1e9+7
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

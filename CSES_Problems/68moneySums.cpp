@@ -1,3 +1,13 @@
+/*
+CSES - Money Sums
+
+All totals formable with the coins (each used at most once).
+
+Pseudocode
+----------
+bitset / boolean knapsack
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

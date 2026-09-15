@@ -1,3 +1,14 @@
+/*
+CSES - Two Sets II
+
+Ways to split 1..n into two equal-sum sets, modulo 1e9+7.
+
+Pseudocode
+----------
+if total odd: 0
+count subsets of sum total/2, divide by 2
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

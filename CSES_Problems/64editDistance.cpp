@@ -1,3 +1,13 @@
+/*
+CSES - Edit Distance
+
+Classic DP: insert/delete/replace.
+
+Pseudocode
+----------
+dp[i][j] := min edits for prefixes
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

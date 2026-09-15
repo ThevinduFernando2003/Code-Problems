@@ -1,3 +1,13 @@
+/*
+CSES - Removal Game
+
+Optimal score when players take from either end.
+
+Pseudocode
+----------
+dp[l][r] := first-player score on subarray l..r
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

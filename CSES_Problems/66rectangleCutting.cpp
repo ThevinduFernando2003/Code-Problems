@@ -1,3 +1,13 @@
+/*
+CSES - Rectangle Cutting
+
+Min cuts to split an a x b rectangle into squares.
+
+Pseudocode
+----------
+dp[w][h] := 1 + min over a horizontal or vertical cut
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

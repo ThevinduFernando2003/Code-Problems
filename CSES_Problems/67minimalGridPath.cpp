@@ -1,3 +1,14 @@
+/*
+CSES - Minimal Grid Path
+
+Lexicographically smallest path from top-left to bottom-right.
+
+Pseudocode
+----------
+keep the frontier of cells that can form the best prefix so far
+append the smallest next letter among neighbors
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
