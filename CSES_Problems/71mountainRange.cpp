@@ -1,3 +1,14 @@
+/*
+CSES - Mountain Range
+
+Longest increasing jump sequence using next greater as edges.
+
+Pseudocode
+----------
+cartesian tree / next greater to the left and right
+DP on the tree
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

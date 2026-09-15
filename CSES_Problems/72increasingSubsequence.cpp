@@ -1,3 +1,13 @@
+/*
+CSES - Increasing Subsequence
+
+Length of the longest increasing subsequence.
+
+Pseudocode
+----------
+patience sorting: tails array + lower_bound
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

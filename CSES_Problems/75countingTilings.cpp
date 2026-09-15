@@ -1,3 +1,13 @@
+/*
+CSES - Counting Tilings
+
+Tilings of n x m with 1x2 and 2x1, modulo 1e9+7.
+
+Pseudocode
+----------
+profile DP on columns / bitmasks
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

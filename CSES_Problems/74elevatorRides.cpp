@@ -1,3 +1,13 @@
+/*
+CSES - Elevator Rides
+
+Min rides of capacity x for n people. n <= 20.
+
+Pseudocode
+----------
+dp[mask] := (rides, leftover weight) to carry the subset
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

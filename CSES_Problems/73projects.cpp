@@ -1,3 +1,14 @@
+/*
+CSES - Projects
+
+Max money from non-overlapping projects.
+
+Pseudocode
+----------
+sort by end
+dp[i] := max(skip, take + dp[prev ending before start])
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

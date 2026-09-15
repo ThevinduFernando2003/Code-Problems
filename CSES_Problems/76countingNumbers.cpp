@@ -1,3 +1,13 @@
+/*
+CSES - Counting Numbers
+
+Count integers in [a,b] with no two adjacent equal digits.
+
+Pseudocode
+----------
+digit DP, subtract f(a-1) from f(b)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
