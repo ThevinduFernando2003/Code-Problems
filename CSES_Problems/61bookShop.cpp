@@ -1,3 +1,14 @@
+/*
+CSES - Book Shop
+
+0/1 knapsack: max pages for price <= x.
+
+Pseudocode
+----------
+dp[p] := max pages using total price p
+for each book, iterate prices descending
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

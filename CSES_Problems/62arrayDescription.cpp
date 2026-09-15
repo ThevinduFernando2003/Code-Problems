@@ -1,3 +1,13 @@
+/*
+CSES - Array Description
+
+Fill zeros so adjacent values differ by at most 1, values in 1..m.
+
+Pseudocode
+----------
+dp[i][v] ways for prefix i ending with v
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

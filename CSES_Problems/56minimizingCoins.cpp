@@ -1,3 +1,14 @@
+/*
+CSES - Minimizing Coins
+
+Fewest coins to make x, or -1.
+
+Pseudocode
+----------
+dp[0]:=0, else inf
+dp[s] := min over coins c of dp[s-c]+1
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

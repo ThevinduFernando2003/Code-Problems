@@ -1,3 +1,14 @@
+/*
+CSES - Dice Combinations
+
+Ways to sum to n with dice faces 1..6, modulo 1e9+7.
+
+Pseudocode
+----------
+dp[0]:=1
+dp[s] := sum dp[s-f] for f=1..6
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

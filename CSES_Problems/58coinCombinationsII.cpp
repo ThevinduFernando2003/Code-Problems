@@ -1,3 +1,15 @@
+/*
+CSES - Coin Combinations II
+
+Unordered ways to make x.
+
+Pseudocode
+----------
+dp[0]:=1
+for each coin:
+    for sum=coin..x: dp[sum]+=dp[sum-coin]
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

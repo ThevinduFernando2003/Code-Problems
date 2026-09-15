@@ -1,3 +1,14 @@
+/*
+CSES - Removing Digits
+
+From n, subtract one of its digits. Minimum steps to 0.
+
+Pseudocode
+----------
+dp[0]:=0
+dp[x] := 1 + min dp[x-digit] over digits of x
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

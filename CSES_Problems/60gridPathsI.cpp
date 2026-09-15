@@ -1,3 +1,14 @@
+/*
+CSES - Grid Paths I
+
+Paths from (1,1) to (n,n) moving only right/down, avoiding traps.
+
+Pseudocode
+----------
+dp[1][1]:=1 if free
+dp[i][j] := dp[i-1][j] + dp[i][j-1] when cell is empty
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
