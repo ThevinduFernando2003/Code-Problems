@@ -1,29 +1,28 @@
-#include <stdio.h>
-#include <iostream>
 #include <bits/stdc++.h>
-
 using namespace std;
 
-void recursionFunction(int n){
-    cout << n << endl;
+/*
+CSES - Weird Algorithm
 
-    if (n == 1){  
-        return; 
-    }
-    else if(n%2 == 1){
-        n = n*3 + 1;
-    }
-    else{
-        n = n/2;
-        
-    }
+Print the Collatz sequence starting from n until 1.
 
-    recursionFunction(n);
-}
+Pseudocode
+----------
+print n
+while n != 1:
+    if n is even: n := n / 2
+    else: n := 3n + 1
+    print n
+use 64-bit integers because the sequence can exceed 2^31
+*/
 
-int main(){
-    int n;
+int main() {
+    long long n;
     cin >> n;
-    recursionFunction(n);
+    while (true) {
+        cout << n << (n == 1 ? "\n" : " ");
+        if (n == 1) break;
+        n = (n % 2 == 0) ? n / 2 : n * 3 + 1;
+    }
     return 0;
 }

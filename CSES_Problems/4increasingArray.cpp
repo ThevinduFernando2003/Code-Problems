@@ -1,3 +1,17 @@
+/*
+CSES - Increasing Array
+
+Minimum increments so the array is non-decreasing.
+
+Pseudocode
+----------
+ans := 0
+for i from 2 to n:
+    if a[i] < a[i-1]:
+        ans += a[i-1]-a[i]
+        a[i] := a[i-1]
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

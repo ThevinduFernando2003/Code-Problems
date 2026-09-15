@@ -1,3 +1,15 @@
+/*
+CSES - Two Knights
+
+Ways to place two knights on kxk so they do not attack, for k=1..n.
+
+Pseudocode
+----------
+total pairs := C(k^2, 2)
+attacking := 2*(k-1)*(k-2)*2
+answer := total - attacking
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

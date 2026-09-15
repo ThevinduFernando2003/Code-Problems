@@ -1,3 +1,15 @@
+/*
+CSES - Permutations
+
+A permutation of 1..n with no two adjacent numbers differing by 1,
+or IMPOSSIBLE.
+
+Pseudocode
+----------
+if n==2 or n==3: IMPOSSIBLE
+print odds then evens (or evens then odds)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #random commit

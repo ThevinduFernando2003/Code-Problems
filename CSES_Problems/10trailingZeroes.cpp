@@ -1,3 +1,13 @@
+/*
+CSES - Trailing Zeros
+
+Trailing zeros of n!.
+
+Pseudocode
+----------
+answer := n/5 + n/25 + n/125 + ...
+*/
+
  #include <bits/stdc++.h>
  using namespace std;
 

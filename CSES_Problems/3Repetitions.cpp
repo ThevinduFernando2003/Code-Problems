@@ -1,3 +1,16 @@
+/*
+CSES - Repetitions
+
+Longest run of the same DNA character.
+
+Pseudocode
+----------
+best := 1, cur := 1
+for i from 1 to n-1:
+    if s[i]==s[i-1]: cur++ else cur := 1
+    best := max(best, cur)
+*/
+
 #include <iostream>
 #include <unordered_map>
 

@@ -1,3 +1,16 @@
+/*
+CSES - Number Spiral
+
+Value at grid cell (y, x) in the number spiral.
+
+Pseudocode
+----------
+layer := max(y,x)
+if layer is odd: ...
+else: ...
+use closed form from the layer corner
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

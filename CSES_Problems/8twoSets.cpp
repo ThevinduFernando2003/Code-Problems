@@ -1,3 +1,14 @@
+/*
+CSES - Two Sets
+
+Split 1..n into two sets with equal sum, or IMPOSSIBLE.
+
+Pseudocode
+----------
+if n(n+1)/2 is odd: IMPOSSIBLE
+greedy take largest remaining numbers into set 1 until the target
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
