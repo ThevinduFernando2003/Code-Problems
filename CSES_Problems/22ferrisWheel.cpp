@@ -1,3 +1,14 @@
+/*
+CSES - Ferris Wheel
+
+Pair children into gondolas of capacity x, minimize gondolas.
+
+Pseudocode
+----------
+sort weights
+two pointers light+heavy if they fit, else heavy alone
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,16 @@
+/*
+CSES - Maximum Subarray Sum
+
+Kadane.
+
+Pseudocode
+----------
+best := -inf, cur := 0
+for x in a:
+    cur := max(x, cur+x)
+    best := max(best, cur)
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

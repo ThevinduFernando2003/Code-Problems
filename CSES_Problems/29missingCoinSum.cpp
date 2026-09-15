@@ -1,3 +1,16 @@
+/*
+CSES - Missing Coin Sum
+
+Smallest amount that cannot be formed with the coins.
+
+Pseudocode
+----------
+sort coins
+res := 1
+for coin <= res: res += coin
+print res
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 //missing coin sum

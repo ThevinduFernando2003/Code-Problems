@@ -1,3 +1,14 @@
+/*
+CSES - Movie Festival
+
+Maximum movies with no overlap.
+
+Pseudocode
+----------
+sort by ending time
+take a movie if it starts after the last taken ending
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

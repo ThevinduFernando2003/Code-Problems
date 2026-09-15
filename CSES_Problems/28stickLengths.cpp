@@ -1,3 +1,14 @@
+/*
+CSES - Stick Lengths
+
+Make all sticks equal, cost |a_i - t|. Optimal t is the median.
+
+Pseudocode
+----------
+sort, t := a[n/2]
+sum |a[i]-t|
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

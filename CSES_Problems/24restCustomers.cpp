@@ -1,3 +1,14 @@
+/*
+CSES - Restaurant Customers
+
+Maximum number of people present at once.
+
+Pseudocode
+----------
++1 at each arrival, -1 at each leaving
+sort events, scan the running count
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

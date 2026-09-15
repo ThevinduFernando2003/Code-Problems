@@ -1,3 +1,14 @@
+/*
+CSES - Apartments
+
+Assign apartments to applicants within difference k.
+
+Pseudocode
+----------
+sort both arrays
+two pointers: assign the cheapest valid apartment
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

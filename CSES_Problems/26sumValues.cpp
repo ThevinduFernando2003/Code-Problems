@@ -1,3 +1,14 @@
+/*
+CSES - Sum of Two Values
+
+Two indices that sum to x, or IMPOSSIBLE.
+
+Pseudocode
+----------
+map value -> index
+for each a[i], look up x-a[i]
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

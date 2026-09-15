@@ -1,3 +1,13 @@
+/*
+CSES - Distinct Numbers
+
+Count unique values.
+
+Pseudocode
+----------
+sort and unique, or insert into a set
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

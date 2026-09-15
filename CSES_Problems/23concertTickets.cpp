@@ -1,3 +1,14 @@
+/*
+CSES - Concert Tickets
+
+Each customer takes the most expensive ticket <= their price.
+
+Pseudocode
+----------
+multiset of tickets
+upper_bound(price) then step left, or -1
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
