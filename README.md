@@ -7,13 +7,13 @@ A personal collection of coding practice solutions, competitive programming prob
 | Folder | Description |
 |--------|-------------|
 | [`Projects/`](Projects/) | Java Swing games plus original [Pygame games](Projects/games/) |
-| [`CSES_Problems/`](CSES_Problems/) | C++ solutions for [CSES Problem Set](https://cses.fi/problemset/) (86 solved) |
+| [`CSES_Problems/`](CSES_Problems/) | C++ solutions for [CSES Problem Set](https://cses.fi/problemset/) (1–192, with pseudocode; full site is 400+) |
 | [`Leetcode/`](Leetcode/) | [LeetCode 75](https://leetcode.com/studyplan/leetcode-75/) solutions in C++ |
 | [`CoderBytes/`](CoderBytes/) | [Coderbyte playlist](https://www.youtube.com/playlist?list=PL88xup0DHWoYPIu3kIM8NWseGr0o9r-OP) challenges in C++ |
 | [`EulerProblems/`](EulerProblems/) | [Project Euler](https://projecteuler.info/) solutions 1–100 (Python) |
 | [`HackerRank/`](HackerRank/) | HackerRank solutions (Algorithms, DS, Mathematics) |
 | [`CodeRally/`](CodeRally/) | CodeRally weekly test and contest solutions |
-| [`SEPrepKit/`](SEPrepKit/) | Software engineering interview prep problems |
+| [`SEPrepKit/`](SEPrepKit/) | [HackerRank Software Engineer Prep Kit](https://www.hackerrank.com/prep-kit/software-engineer) coding challenges in Python |
 | [`SQL/`](SQL/) | [Code360 Top 100 SQL](https://www.naukri.com/code360/problem-lists/top-100-sql-problems) (q01–q100) |
 | [`WeeklyQuiz/`](WeeklyQuiz/) | Weekly quiz and challenge solutions |
 | [`DSA/`](DSA/) | Data structures and algorithms practice |
@@ -90,14 +90,18 @@ Reference: [Code360 Top 100 SQL](https://www.naukri.com/code360/problem-lists/to
 
 ## CSES Progress
 
-Solutions follow the `{number}{problemName}.cpp` naming convention in [`CSES_Problems/`](CSES_Problems/).
+Solutions follow the `{number}{problemName}.cpp` naming convention in [`CSES_Problems/`](CSES_Problems/). Each file includes pseudocode above the C++ program. See [`CSES_Problems/README.md`](CSES_Problems/README.md).
 
 | Section | Problems | Status |
 |---------|----------|--------|
 | Introductory Problems | 1–19 | Complete |
 | Sorting and Searching | 20–54 | Complete |
 | Dynamic Programming | 55–76 | Complete |
-| Graph Algorithms | 77–86 | In progress |
+| Graph Algorithms | 77–112 | Complete |
+| Range Queries | 113–136 | Core set complete |
+| Tree Algorithms | 120–125, 137–144 | Core set complete |
+| Mathematics / strings / geometry | 145–172, 190–192 | Large subset |
+| Sliding window, bitwise, games | 173–189 | Large subset |
 
 Reference: [CSES Problem Set](https://cses.fi/problemset/) · [GeeksforGeeks CSES guide](https://www.geeksforgeeks.org/dsa/cses-problem-set-solutions/)
 
