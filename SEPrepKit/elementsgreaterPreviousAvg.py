@@ -7,7 +7,6 @@ import re
 import sys
 
 
-
 #
 # Complete the 'countResponseTimeRegressions' function below.
 #
@@ -16,24 +15,20 @@ import sys
 #
 
 def countResponseTimeRegressions(responseTimes):
-    if len(responseTimes) <= 1:
+    n = len(responseTimes)
+    if n <= 1:
         return 0
 
-    running_sum = 0
     count = 0
+    running_sum = 0
 
-    for i in range(len(responseTimes)):
-        current = responseTimes[i]
-
-        if i > 0:
-            previous_average = running_sum / i
-
-            if current > previous_average:
-                count += 1
-
-        running_sum += current
+    for i in range(n):
+        if i > 0 and responseTimes[i] * i > running_sum:
+            count += 1
+        running_sum += responseTimes[i]
 
     return count
+
 
 if __name__ == '__main__':
     responseTimes_count = int(input().strip())
@@ -47,5 +42,3 @@ if __name__ == '__main__':
     result = countResponseTimeRegressions(responseTimes)
 
     print(result)
-
-
