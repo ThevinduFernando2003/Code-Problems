@@ -2,6 +2,20 @@
 #include <algorithm>
 using namespace std;
 
+/*
+LeetCode 1431 - Kids With the Greatest Number of Candies
+
+For each kid, report whether giving them extraCandies would make their
+count at least as large as any other kid.
+
+Pseudocode
+----------
+best := max(candies)
+for each c in candies:
+    answer[i] := (c + extraCandies >= best)
+return answer
+*/
+
 class Solution {
 public:
     vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
