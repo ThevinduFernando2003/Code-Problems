@@ -2,6 +2,21 @@
 #include <algorithm>
 using namespace std;
 
+/*
+LeetCode 643 - Maximum Average Subarray I
+
+Return the maximum average of any contiguous subarray of length k.
+
+Pseudocode
+----------
+window := sum of first k elements
+best := window
+for i from k to n-1:
+    window := window + nums[i] - nums[i - k]
+    best := max(best, window)
+return best / k
+*/
+
 class Solution {
 public:
     double findMaxAverage(vector<int>& nums, int k) {
