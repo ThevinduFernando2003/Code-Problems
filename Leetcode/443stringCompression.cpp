@@ -2,6 +2,22 @@
 #include <string>
 using namespace std;
 
+/*
+LeetCode 443 - String Compression
+
+Compress consecutive groups in place: a letter followed by its count
+when the count is greater than 1. Return the new length.
+
+Pseudocode
+----------
+write := 0
+for each run of identical chars from i to j-1:
+    write the character
+    if run length > 1: write its decimal digits
+    i := j
+return write
+*/
+
 class Solution {
 public:
     int compress(vector<char>& chars) {
