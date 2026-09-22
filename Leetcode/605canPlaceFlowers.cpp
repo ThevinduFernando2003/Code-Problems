@@ -1,6 +1,21 @@
 #include <vector>
 using namespace std;
 
+/*
+LeetCode 605 - Can Place Flowers
+
+Place n flowers in empty plots so that no two flowers are adjacent.
+Return true if that is possible.
+
+Pseudocode
+----------
+for i from 0 to n-1 while flowers remain:
+    if plot i is empty and both neighbors are empty (or missing):
+        plant at i
+        n := n - 1
+return n <= 0
+*/
+
 class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {
